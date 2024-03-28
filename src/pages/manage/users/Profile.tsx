@@ -144,20 +144,21 @@ const Profile = () => {
               }}
             >
               <AlertIcon mr="$2_5" />
-              <AlertTitle mr="$2_5">{t("users.guest-tips")}</AlertTitle>
-              <AlertDescription>{t("users.modify_nothing")}</AlertDescription>
+              {/* <AlertTitle mr="$2_5">{t("users.guest-tips")}</AlertTitle> */}
+              <Text>{t("洗洗睡吧不公开😋，请点击👈回到主页")}</Text>
+              {/* <AlertDescription>{t("users.modify_nothing")}</AlertDescription> */}
             </Alert>
             <HStack spacing="$2">
-              <Text>{t("global.have_account")}</Text>
-              <Text
+              {/* <Text>{t("global.have_account")}</Text> */}
+              {/* <Text
                 color="$info9"
                 as={LinkWithBase}
                 href={`/@login?redirect=${encodeURIComponent(
-                  location.pathname,
+                  location.pathname
                 )}`}
               >
                 {t("global.go_login")}
-              </Text>
+              </Text> */}
             </HStack>
           </>
         }
