@@ -45,6 +45,7 @@ const Password = () => {
           direction={{ "@initial": "column", "@sm": "row" }}
           columnGap="$1"
         >
+          {/*
           <Text>{t("global.have_account")}</Text>
           <Text
             color="$info9"
@@ -52,7 +53,8 @@ const Password = () => {
             href={`/@login?redirect=${encodeURIComponent(location.pathname)}`}
           >
             {t("global.go_login")}
-          </Text>
+          </Text>*/}
+          <Text>{t("无法访问力")}</Text>
         </Flex>
         <HStack spacing="$2">
           <Button colorScheme="neutral" onClick={back}>
