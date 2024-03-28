@@ -12,7 +12,15 @@ import {
   BsWindows,
   BsFileEarmarkZipFill,
   BsMarkdownFill,
+  BsFiletypeYml,
+  BsFiletypeXml
 } from "solid-icons/bs"
+import { 
+  SiTypescript,
+  SiGnubash,
+  SiJavascript,
+  SiPhp
+} from "solid-icons/si"
 import {
   FaSolidDatabase,
   FaSolidBook,
@@ -23,6 +31,8 @@ import { IoFolder } from "solid-icons/io"
 import { ImAndroid } from "solid-icons/im"
 import { Obj, ObjType } from "~/types"
 import { ext } from "./path"
+import { FaBrandsGolang,FaBrandsJava,FaBrandsPython } from 'solid-icons/fa'
+import { BiSolidFileJson,BiSolidFileCss,BiSolidFileHtml } from 'solid-icons/bi'
 import {
   VscodeIconsFileTypeAi2,
   VscodeIconsFileTypePhotoshop2,
@@ -47,6 +57,19 @@ const iconMap = {
   ai: VscodeIconsFileTypeAi2,
   url: FaSolidLink,
   cast: SiAsciinema,
+  // code
+  go: FaBrandsGolang,
+  java: FaBrandsJava,
+  pnp:SiPhp,
+  "py,pyc,pyo,pyi,pyw,pyd,pyx": FaBrandsPython,
+  "ts,tsx": SiTypescript, 
+  "yaml,yml,toml": BsFiletypeYml,
+  xml:BsFiletypeXml,
+  sh: SiGnubash,
+  json: BiSolidFileJson,
+  "js,mjs,cjs": SiJavascript,
+  css:BiSolidFileCss,
+  html:BiSolidFileHtml,
 }
 
 export const getIconByTypeAndExt = (type: number, ext: string) => {
